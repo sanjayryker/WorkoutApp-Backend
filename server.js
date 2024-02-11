@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 4000
 app.use(express.json())
 app.use(express.urlencoded({extended:false}))
 app.use(cors({
-    origin : ["http://localhost:3000","https://workout-tracker-m409.onrender.com"]
+    origin : ["http://localhost:4000","https://workout-tracker-m409.onrender.com"]
 }));
 // routes
 app.use('/api/workout',workoutRoute)
